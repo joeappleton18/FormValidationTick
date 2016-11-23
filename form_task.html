@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>HTML - Form </title>
+        <meta charset="utf-8">
+        <meta name="description" content="Session 8 form task">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- This is a large un-styled form -->
+            <h1> Travel Survey</h1>
+            <form id="travel_survey">
+
+                <!-- Personal Information  -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <p>
+                        <img id="valid_first_name" src="#">
+                        <label> First Name(*): </label> <input id="first_name" type="text" name="first_name" required oninput="isValid('first_name')" onfocus="isValid('first_name')">
+                    </p>
+                    <p>
+                        <img id="valid_last_name" src="#">
+                        <label> Last Name(*):   </label> <input id="last_name" type="text" name="last_name" required oninput="isValid('last_name')" onfocus="isValid('last_name')">
+                    </p>
+                </fieldset>
+
+                <!-- Contact Information -->   
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <p>
+                        <img id="valid_address_1" src="#">
+                        <label> Address Line 1(*): </label> <input id="address_1" type="text" name="address_1" required oninput="isValid('address_1')" onfocus="isValid('address_1')">
+                    </p>
+                    <p>
+                        <img id="valid_post_code" src="#">
+                        <label>Post Code(*): </label> <input id="post_code" type="text" name="post_code" required oninput="isValid('post_code')" onfocus="isValid('post_code')">
+                    </p>
+                    <p>
+                        <img id="valid_phone1" src="#">
+                        <label>Phone Number1(*): </label> <input id="phone1" type="tel" name="phone1" required oninput="isValid('phone1')" onfocus="isValid('phone1')">
+                    </p>
+                    <p>
+                        <img id="valid_phone2" src="#">
+                        <label>Phone Number2: </label><input id="phone2" type="tel" name="phone2" oninput="isValid('phone2')" onfocus="isValid('phone2')">
+                    </p>
+                    <p>
+                        <img id="valid_email" src="#">
+                        <label> Email(*): </label> <input id="email" type="email" name="email" required oninput="isValid('email')" onfocus="isValid('email')">
+                    </p>
+                </fieldset>
+
+                <!-- Travel  Information --> 
+                <fieldset>
+                    <legend>Travel Information</legend>
+                    <p>
+                        <label> How do you normally travel to university?</label> <br>
+                        <input type="radio" name="tasport_method" value="drive"> Drive <br>
+                        <input type="radio" name="tasport_method" value="public"> Public transport <br>
+                        <input type="radio" name="tasport_method" value="public"> Walk <br>
+                    </p>
+                    <p>
+                        <label> How long does it take you to travel in? </label> <br>
+                        <select name="travel_time">
+                            <option value=""> Select a time </option>
+                            <option value="10"> 0 - 10 mins</option>
+                            <option value="20"> 10 - 20 mins</option>
+                            <option value="30"> 20 - 30 mins</option>
+                            <option value="30+"> 30 mins +</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <!--  Declaration  -->     
+                <fieldset>
+                    <legend>Declaration</legend>
+                    <p>
+                        <img id="valid_can_email" src="#">
+                        <label for="can_email" id="can_email"> Are you happy for us to email you? </label> <br>
+                        <input type="radio" name="can_email" value="yes" required> Yes <br>
+                        <input type="radio" name="can_email" value="no" required> No <br>
+                    </p>
+                </fieldset>
+
+                <!-- Submit button -->            
+                <p><input type="submit"></p>   
+                
+            </form> <!-- /TRAVEL_SURVEY -->
+            
+        </div> <!-- /WRAPPER -->
+        
+        <script src="js/script.js"></script>
+    </body>
+</html>

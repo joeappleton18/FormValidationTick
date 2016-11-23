@@ -1,0 +1,40 @@
+#wrapper {
+    width: 350px;
+    margin: 0 auto;
+}
+
+img {
+    visibility: hidden;
+    width: 20px;
+    height: 20px;
+    float: right;
+}
+
+fieldset {
+    border: 1px solid #c3c3c3;
+}
+
+form input[type="text"], form input[type="email"], form input[type="tel"] {
+    float:right;
+    margin-right: 10px;
+}
+
+form input:focus:invalid {
+    background-color: #ffb4b4;
+}
+
+form input:focus:valid {
+    background-color: #c0ffb4;
+}
+
+form input:invalid {
+    
+}
+
+form input:valid {
+    
+}
+
+h1 {
+    text-align: center;
+}
